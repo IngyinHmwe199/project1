@@ -46,8 +46,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $mail->isSMTP();
                 $mail->Host = 'smtp.sendgrid.net'; // Replace with your SMTP server
                 $mail->SMTPAuth = true;
-                // $mail->Username = 'apikey';
-                // $mail->Password = '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';
+                // $mail->Username = 'apikey'; Replace with api key
+                // $mail->Password = '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'; 
                 $mail->SMTPSecure = 'tls';
                 $mail->Port = 587;
 
