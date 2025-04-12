@@ -46,12 +46,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $mail->isSMTP();
                 $mail->Host = 'smtp.sendgrid.net'; // Replace with your SMTP server
                 $mail->SMTPAuth = true;
-                $mail->Username = 'apikey';
-                //$mail->Password = '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';
+                // $mail->Username = 'apikey';
+                // $mail->Password = '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';
                 $mail->SMTPSecure = 'tls';
                 $mail->Port = 587;
 
-                $mail->setFrom('*****@gmail.com', 'Admin Verification');
+                $mail->setFrom('ghmwe19@gmail.com', 'Admin Verification');
                 $mail->addAddress($email);
                 $mail->isHTML(true);
                 $mail->Subject = 'Admin Login Verification';
